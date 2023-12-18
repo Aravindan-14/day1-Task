@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+    <!--<title>Typing Text Animation</title>-->
+    <link rel="stylesheet" href="3.3.5.css">
+</head>
+<body class="background">
+  <div class="card">
+    <h1>GAME</h1>
+  <div>
+     <input class="" id="gussedNum" >
+  <button onclick="check()">check</button>
+  </div>
+   <h3 id="result">result</h3>
+    <p id="score">score : 10</p>
+  </div>
+ 
+
+
+   <script>
+    
+    var gussedNum=document.getElementById("gussedNum")
+    var result = document.getElementById("result")
+    var score = document.getElementById("score")
+    var totalScore="10"
+
+
+    var randomNum = Math.floor(Math.random()*10)+1
+    
+console.log(randomNum);
+    function check(){
+      var enteredNum=gussedNum.value;
+     
+
+      if(enteredNum==randomNum){
+       result.textContent= "Right"
+      }else{
+          
+        totalScore=totalScore-1
+        score.textContent= "Score :"+totalScore
+        result.textContent="Wrong"
+      }
+        
+    }
+
+   </script>
+</body>
+</html>

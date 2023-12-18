@@ -1,0 +1,14 @@
+.card{
+    background-color: rgb(85, 85, 85);
+    height: 400px;
+    width: 300px;
+    padding: 30px;
+    padding-top: 100px;
+}
+.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}

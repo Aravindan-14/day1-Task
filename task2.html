@@ -1,0 +1,27 @@
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="update(event)">Vicky</button>
+    <button onclick="update(event)">sakthi</button>
+    <div id="result"> </div>
+
+    <script>
+
+        var div = document.getElementById("result")
+
+        function update() {
+            var value = event.target.textContent
+            var h1 = document.createElement("h1")
+            h1.textContent = value
+            div.append(h1)
+        }
+
+    </script>
+</body>
+
+</html>
