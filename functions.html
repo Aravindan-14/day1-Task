@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>hello world </h1>
+
+    <script>
+
+        // Syntax:
+        function functionName(parameters) {
+            // code to be executed
+        }
+        // Example:
+        function myFunction(a, b) {
+            return a * b;
+        }
+        // myFunction(2, 3);
+        var total = myFunction(2, 3);
+        console.log(total);
+        //  <------------------>
+
+        var greet = function (platform) {
+            console.log("Welcome to ", platform);
+        };
+
+        greet("GeeksforGeeks!");
+
+        //<-------------------->
+
+        hello = () => {
+            console.log("Hello world");
+        }
+
+        hello();
+
+        var student = [{ name: "aravind", age: "23", department: "BCA", subject: ["tamil", "English", "Maths"] }, { name: "VICKY", age: "23", department: "BCA" }, { name: "SETHU", age: "23", department: "BCA" }]
+
+        console.log(student[0].subject[1]);
+    </script>
+</body>
+
+</html>
